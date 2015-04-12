@@ -1,0 +1,69 @@
+html, body {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	color: #333;
+	background-color: #ffeef1;
+	text-align: center;
+}
+
+.container {
+	width: 1180px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+	.container {
+		width: 980px;
+	}
+}
+
+.header {
+	background-color: #fff;
+	border: 1px #eeeeee solid;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	box-shadow: 0px 40px 70px -30px #563d7c;
+}
+
+.title {
+	font-size: 28px;
+}
+.subtitle {
+	font-size: 18px;
+	color: #999;
+}
+
+.item {
+	margin: 20px;
+	padding: 20px;
+	font-size: 24px;
+	line-height: 2;
+	vertical-align: middle;
+	background-color: #fff;
+	color: #666;
+	box-shadow: 1px 1px 25px -10px #000;
+}
+.item:hover {
+	background-color: #563d7c;
+	color: #ffeeff;
+}
+.item > a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+.item > a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+.item > a:link {
+	color: inherit;
+	text-decoration: none;
+}
+.item > a:active {
+	color: inherit;
+	text-decoration: none;
+}
+.item > a:visited {
+	color: inherit;
+	text-decoration: none;
+}
