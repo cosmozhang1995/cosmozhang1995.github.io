@@ -1,0 +1,288 @@
+[
+	{
+		"name": "js",
+		"displayName": "JavaScript",
+		"shortName": "JS",
+		"css": {
+			"backgroundColor": "#1FFF00",
+			"x": -70,
+			"y": 0,
+			"size": 100,
+			"fontSize": 16
+		},
+		"rate": 10
+	},
+	{
+		"name": "css",
+		"displayName": "CSS",
+		"shortName": "CSS",
+		"css": {
+			"backgroundColor": "#E8B50C",
+			"x": 70,
+			"y": 0,
+			"size": 100,
+			"fontSize": 22
+		},
+		"rate": 10
+	},
+	{
+		"name": "python",
+		"displayName": "Python",
+		"shortName": "Python",
+		"css": {
+			"backgroundColor": "#7C0CE8",
+			"x": -180,
+			"y": 40,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 8
+	},
+	{
+		"name": "php",
+		"displayName": "PHP",
+		"shortName": "PHP",
+		"css": {
+			"backgroundColor": "#0DC8FF",
+			"x": -180,
+			"y": -40,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 8
+	},
+	{
+		"name": "objc",
+		"displayName": "Obj C",
+		"shortName": "JS",
+		"css": {
+			"backgroundColor": "#FFF602",
+			"x": -250,
+			"y": -80,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 0
+	},
+	{
+		"name": "cpp",
+		"displayName": "C/C++",
+		"shortName": "C/C++",
+		"css": {
+			"backgroundColor": "#E8670A",
+			"x": -250,
+			"y": 0,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 5
+	},
+	{
+		"name": "java",
+		"displayName": "Java",
+		"shortName": "Java",
+		"css": {
+			"backgroundColor": "#FF02FF",
+			"x": -250,
+			"y": 80,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 8
+	},
+	{
+		"name": "ajax",
+		"displayName": "AJAX",
+		"shortName": "AJAX",
+		"css": {
+			"backgroundColor": "#0A52E8",
+			"x": 0,
+			"y": -80,
+			"size": 80,
+			"fontSize": 14
+		},
+		"rate": 9
+	},
+	{
+		"name": "jquery",
+		"displayName": "jQuery",
+		"shortName": "jQuery",
+		"css": {
+			"backgroundColor": "#FF02FF",
+			"x": 0,
+			"y": 80,
+			"size": 80,
+			"fontSize": 14
+		},
+		"rate": 10
+	},
+	{
+		"name": "mysql",
+		"displayName": "MySQL",
+		"shortName": "MySQL",
+		"css": {
+			"backgroundColor": "#0BFF60",
+			"x": -320,
+			"y": -40,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 7
+	},
+	{
+		"name": "linux",
+		"displayName": "RHEL",
+		"shortName": "RHEL",
+		"css": {
+			"backgroundColor": "#E8B50C",
+			"x": -320,
+			"y": 40,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 11
+	},
+	{
+		"name": "thinkphp",
+		"displayName": "ThinkPHP",
+		"shortName": "ThinkPHP",
+		"css": {
+			"backgroundColor": "#0BFF60",
+			"x": 320,
+			"y": -40,
+			"size": 50,
+			"fontSize": 10
+		},
+		"rate": 6
+	},
+	{
+		"name": "ssh",
+		"displayName": "SSH",
+		"shortName": "SSH",
+		"css": {
+			"backgroundColor": "#E8B50C",
+			"x": 320,
+			"y": 40,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 6
+	},
+	{
+		"name": "ember",
+		"displayName": "Ember",
+		"shortName": "Ember",
+		"css": {
+			"backgroundColor": "#E8670A",
+			"x": -100,
+			"y": -90,
+			"size": 60,
+			"fontSize": 12
+		},
+		"rate": 9
+	},
+	{
+		"name": "coffeescript",
+		"displayName": "CoffeeScript",
+		"shortName": "Coffee",
+		"css": {
+			"backgroundColor": "#E8B50C",
+			"x": -100,
+			"y": 90,
+			"size": 60,
+			"fontSize": 12
+		},
+		"rate": 9
+	},
+	{
+		"name": "bootstrap",
+		"displayName": "Bootstrap",
+		"shortName": "Bootstrap",
+		"css": {
+			"backgroundColor": "#7C0CE8",
+			"x": 100,
+			"y": -90,
+			"size": 60,
+			"fontSize": 12
+		},
+		"rate": 9
+	},
+	{
+		"name": "nodejs",
+		"displayName": "Node.js",
+		"shortName": "Node",
+		"css": {
+			"backgroundColor": "#0DC8FF",
+			"x": 100,
+			"y": 90,
+			"size": 60,
+			"fontSize": 12
+		},
+		"rate": 9
+	},
+	{
+		"name": "ps",
+		"displayName": "Photoshop",
+		"shortName": "PS",
+		"css": {
+			"backgroundColor": "#0BFF60",
+			"x": 180,
+			"y": 40,
+			"size": 50,
+			"fontSize": 9
+		},
+		"rate": 4
+	},
+	{
+		"name": "ae",
+		"displayName": "AfterEffects",
+		"shortName": "AE",
+		"css": {
+			"backgroundColor": "#E8670A",
+			"x": 180,
+			"y": -40,
+			"size": 50,
+			"fontSize": 8
+		},
+		"rate": 4
+	},
+	{
+		"name": "fl",
+		"displayName": "Flash",
+		"shortName": "Fl",
+		"css": {
+			"backgroundColor": "#0DC8FF",
+			"x": 250,
+			"y": -80,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 4
+	},
+	{
+		"name": "sprites",
+		"displayName": "Sprite",
+		"shortName": "Sprite",
+		"css": {
+			"backgroundColor": "#FFF602",
+			"x": 250,
+			"y": 0,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 0
+	},
+	{
+		"name": "pr",
+		"displayName": "Premiere",
+		"shortName": "Pr",
+		"css": {
+			"backgroundColor": "#FF02FF",
+			"x": 250,
+			"y": 80,
+			"size": 50,
+			"fontSize": 12
+		},
+		"rate": 4
+	}
+]

@@ -1,0 +1,11 @@
+name: 花栗鼠的猫的技术博客
+author: 花栗鼠的猫
+
+# highlighter: pygments
+
+gems: [jekyll-paginate]
+
+paginate: 1
+paginate_path: "/blog/page:num"
+
+github_page: https://github.com/cosmozhang1995

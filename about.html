@@ -1,0 +1,87 @@
+---
+title: 关于花栗鼠的猫
+pagetype: about
+---
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+    {% include head.html %}
+    <link rel="stylesheet" type="text/css" href="{{site.url}}/public/stylesheets/resume.css">
+</head>
+
+<body>
+    <section class="page-header">
+        {% include nav.html page=page.pagetype %}
+        <div class="main-content">
+            <div>
+                <div class="person-alias">
+                </div>
+                <div class="person-info">
+                    <p style="">
+                        <span class="person-name">张家治</span>
+                        <span class="person-name">Cosmo Zhang</span>
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        <span class="person-titles">全栈开发者</span>
+                        <span class="person-titles">Full Stack Developer</span>
+                    </p>
+                    <p class="person-github">
+                        <a href="{{site.github_page}}" target="_blank" class="btn btn-sm">
+                            <span class="icon-github"></span>
+                            <span class="text-github">View Me on GitHub</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content" id="main-content">
+        <div>
+            <div class="resume-container">
+                <div id="resume-row-skills" class="resume-row resume-row-skills">
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">C/C++</span>
+                </div>
+                <div id="resume-row-time-line-container" class="pc-experiences">
+                </div>
+                <div class="mobile-experiences">
+                    <div id="experience-education" class="section-box experience-section education">
+                        <div class="title">教育经历</div>
+                        <div class="experience-container">
+                            <div class="time-line"></div>
+                            <div class="experience-list">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-career" class="section-box experience-section career">
+                        <div class="title">工作经历</div>
+                        <div class="experience-container">
+                            <div class="time-line"></div>
+                            <div class="experience-list"></div>
+                        </div>
+                    </div>
+                    <div id="experience-projects" class="section-box experience-section projects">
+                        <div class="title">项目经历</div>
+                        <div class="experience-container">
+                            <div class="time-line"></div>
+                            <div class="experience-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+    </section>
+
+    {% include foot.html %}
+    <script type="text/javascript">
+        site_url = "{{site.url}}";
+    </script>
+    <script type="text/javascript" src="{{site.url}}/public/javascripts/resume.js"></script>
+
+  </body>
+</html>

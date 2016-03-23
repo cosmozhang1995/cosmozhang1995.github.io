@@ -1,0 +1,28 @@
+---
+pagetype: post
+---
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <section class="page-header">
+      {% include nav.html page=page.pagetype %}
+    </section>
+
+    <section class="main-content">
+      <div>
+        {{content}}
+      </div>
+
+      {% include footer.html %}
+
+    </section>
+
+    {% include foot.html %}
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+[
+	{
+		"startYear": 2009,
+		"startMonth": 9,
+		"endYear": 2012,
+		"endMonth": 6,
+		"tag": "Senior High",
+		"title": "河南省信阳高中",
+		"desc": "校信息办助理"
+	},
+	{
+		"startYear": 2012,
+		"startMonth": 9,
+		"endYear": 2016,
+		"endMonth": 6,
+		"tag": "University",
+		"title": "北京邮电大学",
+		"desc": "通信工程专业试点班培养方案<br/>北邮学生会网络部副部长"
+	},
+	{
+		"startYear": 2016,
+		"startMonth": 9,
+		"endYear": null,
+		"endMonth": null,
+		"tag": "University",
+		"title": "北京大学",
+		"desc": "生物信息中心"
+	}
+]

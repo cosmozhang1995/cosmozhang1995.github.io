@@ -1,0 +1,12 @@
+[
+	{
+		"name": "我的个人博客",
+		"url": "http://www.cosmozhang.com/",
+		"img": "{{site_url}}/public/data/newbies/img/cosmo_blog.gif"
+	},
+	{
+		"name": "TribleView - 三连翻",
+		"url": "http://cosmozhang1995.github.io/trible-pager/",
+		"img": "http://cosmozhang1995.github.io/trible-pager/img/slogan.gif"
+	}
+]

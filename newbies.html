@@ -1,0 +1,56 @@
+---
+title: 关于花栗鼠的猫
+pagetype: newbies
+---
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+    {% include head.html %}
+    <!-- <link rel="stylesheet" type="text/css" href="{{site.url}}/public/stylesheets/resume.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{site.url}}/public/stylesheets/newbies.css">
+</head>
+
+<body>
+    <section class="page-header">
+        {% include nav.html page=page.pagetype %}
+        <!-- <div class="main-content">
+            <div>
+                <div class="person-alias">
+                </div>
+                <div class="person-info">
+                    <p style="">
+                        <span class="person-name">张家治</span>
+                        <span class="person-name">Cosmo Zhang</span>
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        <span class="person-titles">全栈开发者</span>
+                        <span class="person-titles">Full Stack Developer</span>
+                    </p>
+                    <p class="person-github">
+                        <a href="{{site.github_page}}" target="_blank" class="btn btn-sm">
+                            <span class="icon-github"></span>
+                            <span class="text-github">View Me on GitHub</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="main-content" id="main-content">
+        <div id="newbies-list" class="newbies-list">
+        </div>
+
+        {% include footer.html %}
+
+    </section>
+
+    {% include foot.html %}
+    <script type="text/javascript">
+        site_url = "{{site.url}}";
+    </script>
+    <script type="text/javascript" src="{{site.url}}/public/javascripts/newbies.js"></script>
+
+  </body>
+</html>
