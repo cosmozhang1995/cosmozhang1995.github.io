@@ -504,3 +504,234 @@ nav.nav a.nav-menu {
 .post-item:last-child {
     border-bottom: none;
 }
+
+/* pagination */
+
+.pagination-wrapper {
+    display: block;
+    text-align: center;
+    text-align: 0rem;
+}
+
+.pagination {
+    display: inline-block;
+    white-space: nowrap;
+    border: solid 1px #eff0f1;
+    color: #606c71;
+    font-size: 0rem;
+}
+
+.pagination > * {
+    display: inline-block;
+    white-space: nowrap;
+    border-right: solid 1px #eff0f1;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    line-height: 1;
+}
+.pagination > *:last-child {
+    border-right: none;
+}
+
+.pagination > a,
+.pagination > a:hover,
+.pagination > a:active,
+.pagination > a:link,
+.pagination > a:visited {
+    color: #606c71;
+    text-decoration: none;
+}
+
+.pagination > a:hover {
+    background-color: #eff0f1;
+}
+
+.pagination > em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* double column layout in post */
+
+.double-column {
+}
+
+.double-column .col-side {
+    float: right;
+    width: 14rem;
+}
+
+.double-column .col-main {
+    margin-right: 16rem;
+}
+
+.double-column .col-side .post-list {
+}
+.double-column .col-side .post-item {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px #eff0f1 solid;
+}
+.double-column .col-side .post-item:last-child {
+    border-bottom: none;
+}
+.double-column .col-side .post-item h3 {
+    font-size: 1rem;
+    margin: 0rem 0rem;
+}
+
+@media screen and (min-width:64em) {
+    .double-column .col-side {
+        width: 14rem;
+    }
+    .double-column .col-main {
+        margin-right: 16rem;
+    }
+    .double-column .col-side .post-item {
+        padding: 1rem 0.5rem;
+    }
+    .double-column .col-side .post-item h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:42em) and (max-width:64em) {
+    .double-column .col-side {
+        width: 12rem;
+    }
+    .double-column .col-main {
+        margin-right: 14rem;
+    }
+    .double-column .col-side .post-item {
+        padding: 1rem 0.5rem;
+    }
+    .double-column .col-side .post-item h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:42em) {
+    .double-column .col-side {
+        width: 8rem;
+    }
+    .double-column .col-main {
+        margin-right: 9rem;
+    }
+    .double-column .col-side .post-item {
+        padding: 0.8rem 0.4rem;
+    }
+    .double-column .col-side .post-item h3 {
+        font-size: 0.8rem;
+    }
+}
+
+/* post page */
+
+.post-title-box {
+    text-align: center;
+    border-bottom: 1px #eff0f1 solid;
+    margin-bottom: 2rem;
+}
+
+/* home section */
+
+.home-section {
+    margin: 1.5rem 0rem;
+    border-bottom: 1px #eff0f1 solid;
+}
+
+.home-section:last-child {
+    border-bottom: none;
+}
+
+.feature-list {
+    font-size: 0rem;
+    text-align: center;
+}
+
+.feature-item {
+    vertical-align: top;
+    display: inline-block;
+    width: 33%;
+    height: 20rem;
+}
+
+.feature-item > * {
+    margin: 0rem auto;
+}
+
+.feature-image {
+    width: 14rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+
+.feature-desc {
+    width: 14rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.feature-desc p {
+    font-size: 1rem;
+    margin: 0rem 0rem;
+    margin-bottom: 1rem;
+    text-indent: 0rem;
+}
+
+@media screen and (min-width:54em) {
+    .feature-item {
+        width: 33%;
+        height: auto;
+        max-height: 20rem;
+    }
+    .feature-image {
+        width: 14rem;
+        height: 8rem;
+    }
+    .feature-desc {
+        width: 14rem;
+    }
+    .feature-desc p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:36em) and (max-width:54em) {
+    .feature-item {
+        width: 33%;
+        height: auto;
+        max-height: 18rem;
+    }
+    .feature-image {
+        width: 10.5rem;
+        height: 6rem;
+    }
+    .feature-desc {
+        width: 10.5rem;
+    }
+    .feature-desc p {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media screen and (max-width:36em) {
+    .feature-item {
+        width: 100%;
+        height: auto;
+        max-height: 15rem;
+    }
+    .feature-image {
+        width: 10.5rem;
+        height: 6rem;
+    }
+    .feature-desc {
+        width: auto;
+        text-align: center;
+    }
+    .feature-desc p {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}

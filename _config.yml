@@ -5,7 +5,8 @@ author: 花栗鼠的猫
 
 gems: [jekyll-paginate]
 
-paginate: 1
+paginate: 5
 paginate_path: "/blog/page:num"
 
 github_page: https://github.com/cosmozhang1995
+codingnet_page: https://coding.net/u/cosmozhang1995
