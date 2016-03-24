@@ -613,9 +613,10 @@ nav.nav a.nav-menu {
 @media screen and (max-width:42em) {
     .double-column .col-side {
         width: 8rem;
+        display: none;
     }
     .double-column .col-main {
-        margin-right: 9rem;
+        margin-right: 0rem;
     }
     .double-column .col-side .post-item {
         padding: 0.8rem 0.4rem;
