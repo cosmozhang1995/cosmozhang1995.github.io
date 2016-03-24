@@ -563,6 +563,7 @@ nav.nav a.nav-menu {
 
 .double-column .col-main {
     margin-right: 16rem;
+    overflow: hidden;
 }
 
 .double-column .col-side .post-list {
