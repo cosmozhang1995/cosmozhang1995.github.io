@@ -737,3 +737,12 @@ nav.nav a.nav-menu {
         margin-bottom: 0.8rem;
     }
 }
+
+/* blockquot */
+blockquote.warning {
+    border-left-color: #
+}
+blockquote.primary { border-left-color: #2e6da4; }
+blockquote.danger  { border-left-color: #d43f3a; }
+blockquote.warning { border-left-color: #eea236; }
+blockquote.success { border-left-color: #4cae4c; }

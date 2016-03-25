@@ -45,5 +45,5 @@ Visual Studio 2013 能自动为MFC插件创建接口。`MFCActiveXControl1Lib.id
 
 插件加载完成后，在IE的JS环境下，`myactivex`变量已经生成，变量指向`id="myactivex"`的`<object>`元素。只需要使用JS语句`myactivex.AboutBox()`即可调用`AboutBox()`方法。调用也可以穿参数，还可以返回返回值。
 
-> 如果你调用`myactivex.AboutBox`，会发现这个成员是`undefined`，但这并不影响什么。`myactivex.AboutBox()`是可以正常调用的。
+> <fakeholder class="warning"></fakeholder>如果你调用`myactivex.AboutBox`，会发现这个成员是`undefined`，但这并不影响什么。`myactivex.AboutBox()`是可以正常调用的。
 

@@ -62,7 +62,7 @@ failure, see the Visual C++ documentation on asserts.
 
 无奈于是Google之，发现也有不少人遇到了类似错误，都是在使用OpenCV的各种函数时遇到的，有一个共同特点，就是都涉及到了`vector`。下面这个讨论算是比较全面的：
 
-[http://answers.opencv.org/questions/67152/revisions/](http://answers.opencv.org/questions/67152/revisions/)
+[<fakeholder target="_blank"></fakeholder>http://answers.opencv.org/questions/67152/revisions/](http://answers.opencv.org/questions/67152/revisions/)
 
 讨论中谈到的原因基本与我猜想的相同，是释放向量时发生的BUG。讨论里有人建议用Release配置编译，但我试了还是不行，结果是这样的：
 
