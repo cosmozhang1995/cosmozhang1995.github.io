@@ -1,0 +1,75 @@
+#!/usr/bin/python
+
+import sys, os
+import datetime
+import xml.dom.minidom
+
+online_url = "http://www.cosmozhang.com"
+
+doc = xml.dom.minidom.Document()
+urlsetEle = doc.createElement('urlset')
+urlsetEle.setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9")
+urlsetEle.setAttribute("xmlns:mobile", "http://www.baidu.com/schemas/sitemap-mobile/1/")
+doc.appendChild(urlsetEle)
+
+def traverseDir(path):
+    if not os.path.exists(path):
+        return []
+    elif os.path.isdir(path):
+        files = []
+        for subpath in os.listdir(path):
+            subpath = os.path.join(path, subpath)
+            files += traverseDir(subpath)
+        return files
+    elif os.path.isfile(path):
+        return [path]
+    return []
+
+cwd = os.getcwd()
+site_path = os.path.join(cwd, '_site')
+if (site_path[-1] == '/'):
+    site_path = site_path[0:-1]
+
+all_files = map(lambda x: os.path.join(site_path, x), [
+    "index.html", "newbies.html", "about.html", "blog/index.html"
+]);
+
+priorities = [1.0, 0.9, 0.9, 0.9]
+
+if os.path.exists(site_path):
+    for dirpath in os.listdir(site_path):
+        dirfullpath = os.path.join(site_path, dirpath)
+        if os.path.isdir(dirfullpath) and not (dirpath in ["blog", "public", "stylesheets"]):
+            all_files += traverseDir(dirfullpath)
+
+def filepath_to_xml(path, priority = 0.8):
+    url = online_url + path.replace(site_path, '')
+    time = datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime("%Y-%m-%d")
+    node = doc.createElement("url")
+    snode = doc.createElement("loc")
+    snode.appendChild(doc.createTextNode(url))
+    node.appendChild(snode)
+    snode = doc.createElement("mobile:mobile")
+    snode.setAttribute("type", "pc,mobile")
+    node.appendChild(snode)
+    snode = doc.createElement("lastmod")
+    snode.appendChild(doc.createTextNode(time))
+    node.appendChild(snode)
+    snode = doc.createElement("changefreq")
+    snode.appendChild(doc.createTextNode("daily"))
+    node.appendChild(snode)
+    snode = doc.createElement("priority")
+    snode.appendChild(doc.createTextNode("%1.1f" % priority))
+    node.appendChild(snode)
+    return node
+
+nodes = map(filepath_to_xml, all_files)
+
+for i in range(0,len(priorities)):
+    nodes[i] = filepath_to_xml(all_files[i], priorities[i])
+
+for n in nodes:
+    urlsetEle.appendChild(n)
+
+f = open('./sitemap.xml', 'w')
+doc.writexml(f, addindent='  ', newl='\n', encoding='utf-8')
