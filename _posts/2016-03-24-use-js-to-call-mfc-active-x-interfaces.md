@@ -19,17 +19,15 @@ author: Cosmo
 
 Visual Studio 2013 能自动为MFC插件创建接口。`MFCActiveXControl1Lib.idl`这个文件定义了所有作为COM接口暴露出去的接口，其中示例项目默认就已经实现了一个 `AboutBox` 接口，可以看到在`MFCActiveXControl1Lib.idl`中，它被定义为一个COM接口，并属于`MFCActiveXControl1Ctrl`类，因此我们可以到`MFCActiveXControl1Ctrl`类中查看该接口的声明和实现。
 
-在VS的类视图中，展开`MFCActiveXControl1Lib.idl`，可以看到`_DMFCActiveXControl1Ctrl`和`_DMFCActiveXControl1CtrlEvents`，前者定义了作为方法的COM接口，后者定义了作为事件的COM接口。右键点击`_DMFCActiveXControl1Ctrl`，选择 添加→方法，可以使用向导添加一个方法。
+在VS的类视图中，展开`MFCActiveXControl1Lib.idl`，可以看到`_DMFCActiveXControl1`和`_DMFCActiveXControl1CtrlEvents`，前者定义了作为方法的COM接口（调度），后者定义了作为事件的COM接口。右键点击`_DMFCActiveXControl1Ctrl`，选择 添加→方法，可以使用向导添加一个方法。
 
-通过向导添加完成后，我们查看下面四个文件：
-
-映射文件：这里定义了作为COM接口暴露出的方法，其中包括方法名、方法的显示名称、方法的id、返回值类型、参数类型等。
+通过向导添加完成后，我们查看下面三个文件：
 
 `MFCActiveXControl1Lib.idl`：这里为`MFCActiveXControl1Ctrl`类添加了对应方法的定义。
 
 `MFCActiveXControl1Ctrl.h`：方法声明
 
-`MFCActiveXControl1Ctrl.cpp`：方法定义
+`MFCActiveXControl1Ctrl.cpp`：方法定义、方法的COM映射（包括方法名、方法的显示名称、方法的id、返回值类型、参数类型等）
 
 #### 在HTML中调用插件
 
