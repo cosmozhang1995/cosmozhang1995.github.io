@@ -4,7 +4,7 @@ title: multipart/form-data POST文件上传详解
 pagetype: post
 author: Cosmo
 ---
-本文解释了通过 multipart/form-data 格式的HTTP请求上传文件的原理。
+本文解释了通过 multipart/form-data 格式的 HTTP 请求上传文件的原理。
 
 #### 简单的HTTP POST
 
