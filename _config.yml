@@ -3,6 +3,8 @@ author: 花栗鼠的猫
 
 # highlighter: pygments
 
+future: true
+
 gems: [jekyll-paginate]
 
 paginate: 5
