@@ -1,3 +1,32 @@
 fakeholder {
     display: none;
 }
+
+.main-content em {
+    display: none;
+}
+.main-content em.showwwww {
+    display: inline;
+}
+
+// Equations
+
+img.eq-center {
+    display: block;
+    margin: 0 auto;
+}
+
+img.eq-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.eq-num {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+}

@@ -221,6 +221,7 @@ a:hover {
 .main-content p {
     margin-bottom: 1em;
     text-indent: 2em;
+    position: relative;
 }
 
 .main-content code {

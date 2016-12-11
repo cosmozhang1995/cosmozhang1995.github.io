@@ -17,6 +17,41 @@ $(function() {
     });
 });
 
+$(function() {
+    $('em').each(function(index, el) {
+        var htmlText = $(this).html();
+
+        // Equation
+        var isEq = htmlText.substr(0,4) == "\\eq ";
+        var isEqc = htmlText.substr(0,5) == "\\eqc ";
+        if (isEq || isEqc) {
+            var equation;
+            if (isEq) equation = htmlText.substr(4);
+            else if (isEqc) equation = htmlText.substr(5);
+            equation = equation.replace(/\n/g, ' \\\\');
+            equation = equation.replace(/\s/g, '%20');
+            equation = equation.replace(/[\'\‘\’]/g, '%27');
+            var imgEl = $('<img src="http://101.201.68.146/cgi-bin/mathtex.cgi?' + equation + '"/>');
+            if (isEqc) imgEl.addClass('eq-center');
+            $(this).after(imgEl);
+            $(this).remove();
+            return;
+        }
+
+        // Equation number
+        var isEqn = htmlText.substr(0,5) == "\\eqn ";
+        if (isEqn) {
+            var nStr = htmlText.substr(5);
+            var nStrEl = $('<div class="eq-num">' + nStr + '</div>');
+            $(this).after(nStrEl);
+            $(this).remove();
+            return;
+        }
+
+        $(this).attr('class', 'showwwww ' + $(this).attr('class'));
+    });
+});
+
 /* class replacements */
 
 // var CLASS_REPLACE_SELECTORS = "blockquote";
