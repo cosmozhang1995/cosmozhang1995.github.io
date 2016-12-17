@@ -56,7 +56,7 @@ BP的精髓在于**δ规则**，而δ规则的精髓在于它建立了相邻两�
 其中
 
 *\eqc \parstyle\begin{align\*}
-\frac{\partial u_j^{(l+1)}}{\partial u_i^{(l)}} &= \frac{\partial (b_j^{(l+1)} + \sum_{k=1}^{s_l} w_{kj}^{(l+1)} f(u_k^{(l)})}{u_i^{(l)}}
+\frac{\partial u_j^{(l+1)}}{\partial u_i^{(l)}} &= \frac{\partial (b_j^{(l+1)} + \sum_{k=1}^{s_l} w_{kj}^{(l+1)} f(u_k^{(l)})}{\partial u_i^{(l)}}
 &= \frac{\partial (w_{ij}^{(l+1)} f(u_i^{(l)}))}{\partial u_i^{(l)}} 
 &= w_{ij}^{(l+1)} f'(u_i^{(l)})
 \end{align\*}*

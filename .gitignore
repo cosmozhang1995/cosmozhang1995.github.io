@@ -1,3 +1,7 @@
 Gemfile.lock
 
 /_site
+
+node_modules
+npm_debug.log
+task-config.js
