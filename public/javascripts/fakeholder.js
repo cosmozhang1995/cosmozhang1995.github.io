@@ -15,11 +15,21 @@ $(function() {
             }
         }
     });
+    $('bqholder').each(function(index, el) {
+        var pel = $(this).closest('blockquote');
+        for (var i = 0; i < HOLD_ATTRIBUTES.length; i++) {
+            var attr = HOLD_ATTRIBUTES[i];
+            var val = $(this).attr(attr);
+            if (val !== undefined && pel.attr(attr) === undefined) {
+                pel.attr(attr, val);
+            }
+        }
+    });
 });
 
 $(function() {
     $('em').each(function(index, el) {
-        var htmlText = $(this).html();
+        var htmlText = $(this).text();
 
         // Equation
         var isEq = htmlText.substr(0,4) == "\\eq ";
@@ -28,7 +38,9 @@ $(function() {
             var equation;
             if (isEq) equation = htmlText.substr(4);
             else if (isEqc) equation = htmlText.substr(5);
-            equation = equation.replace(/\n/g, ' \\\\');
+            equation = equation.replace(/\n/g, '%20');
+            equation = equation.replace(/\<br\>/g, '%20');
+            equation = equation.replace(/\<br\/\>/g, '%20');
             equation = equation.replace(/\s/g, '%20');
             equation = equation.replace(/[\'\‘\’]/g, '%27');
             var imgEl = $('<img src="http://101.201.68.146/cgi-bin/mathtex.cgi?' + equation + '"/>');
@@ -71,3 +83,23 @@ $(function() {
 //         return classnameWrapped.substr(1);
 //     }
 // });
+
+$(function () {
+    $("blockquote,p").each(function(index, el) {
+        var htmlText = $(this).text();
+        var m = htmlText.match(/^(\.\w+)+/);
+        if (m) {
+            var matchedTexts = m[0].split('.');
+            for (var i = 0; i < matchedTexts.length; i++) {
+                var classname = matchedTexts[i];
+                if (classname && classname.length > 0) $(this).addClass(classname);
+            }
+        }
+    });
+});
+
+$(function () {
+    $("blockquote.collapsable").on('click', function () {
+        $(this).toggleClass('uncollapsed');
+    });
+});

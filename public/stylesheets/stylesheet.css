@@ -512,6 +512,12 @@ nav.nav a.nav-menu {
     border-bottom: none;
 }
 
+.post-item .post-excerpt {
+    max-height: 6.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* pagination */
 
 .pagination-wrapper {
