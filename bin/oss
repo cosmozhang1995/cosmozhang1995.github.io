@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+import sys, os
+import oss2
+import readconf
+import uuid
+import re
+
+conf = readconf.read_default()
+ossurl = conf.aliyun_oss_schema + "://" + conf.aliyun_oss_bucket + "." + conf.aliyun_oss_endpoint
+auth = oss2.Auth(conf.aliyun_accesskey_id, conf.aliyun_accesskey_secret)
+bucket = oss2.Bucket(auth, conf.aliyun_oss_schema + "://" + conf.aliyun_oss_endpoint, conf.aliyun_oss_bucket)
+
+opername = sys.argv[1]
+filepath = sys.argv[2]
+
+if opername == "d" or opername == "delete":
+  filename = re.sub("\w+\://[\w\.\-]+\/", "", filepath)
+  bucket.delete_object(filename)
+  print "Delete completed."
+elif opername == "a" or opername == "add":
+  filename = os.path.split(os.path.realpath(filepath))[1]
+  remote_filename = str(uuid.uuid1()) + "-" + filename
+  bucket.put_object_from_file(remote_filename, filepath)
+  print "Uploaded URL: \x1B[34m\x1B[1m\x1B[4m" + conf.aliyun_oss_schema + "://" + conf.aliyun_oss_bucket + "." + conf.aliyun_oss_endpoint + "/" + remote_filename + "\x1B[m"

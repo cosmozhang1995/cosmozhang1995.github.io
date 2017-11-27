@@ -43,7 +43,7 @@ a:hover {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     .btn {
         padding: 0.75rem 1rem;
     }
@@ -53,7 +53,7 @@ a:hover {
 
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:64rem) {
     .btn {
         padding: 0.6rem 0.9rem;
         font-size: 0.9rem;
@@ -64,7 +64,7 @@ a:hover {
 
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .btn {
         display: block;
         width: 100%;
@@ -93,7 +93,7 @@ a:hover {
     text-align: center;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     .page-header-huge {
         padding: 5rem 6rem;
     }
@@ -103,7 +103,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:64rem) {
     .page-header-huge {
         padding: 3rem 4rem;
     }
@@ -113,7 +113,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .page-header-huge {
         padding: 2rem 1rem;
     }
@@ -128,21 +128,21 @@ a:hover {
     margin-bottom: 0.1rem;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     .project-name {
         font-size: 3.25rem;
     }
 
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:64rem) {
     .project-name {
         font-size: 2.25rem;
     }
 
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .project-name {
         font-size: 1.75rem;
     }
@@ -155,21 +155,21 @@ a:hover {
     opacity: 0.7;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     .project-tagline {
         font-size: 1.25rem;
     }
 
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:64rem) {
     .project-tagline {
         font-size: 1.15rem;
     }
 
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .project-tagline {
         font-size: 1rem;
     }
@@ -222,6 +222,10 @@ a:hover {
     margin-bottom: 1em;
     text-indent: 2em;
     position: relative;
+}
+
+.main-content p img {
+    margin-left: -2em;
 }
 
 .main-content code {
@@ -356,9 +360,9 @@ a:hover {
     border: 0;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:80rem) {
     .main-content {
-        max-width: 64rem;
+        max-width: 80rem;
         padding: 2rem 6rem;
         margin: 0 auto;
         font-size: 1.1rem;
@@ -366,7 +370,7 @@ a:hover {
 
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:80rem) {
     .main-content {
         padding: 2rem 4rem;
         font-size: 1.1rem;
@@ -374,7 +378,7 @@ a:hover {
 
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .main-content {
         padding: 2rem 1rem;
         font-size: 1rem;
@@ -403,21 +407,21 @@ a:hover {
     border-top: 1px #cccccc solid;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     .site-footer {
         font-size: 0.8rem;
     }
 
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:64rem) {
     .site-footer {
         font-size: 0.8rem;
     }
 
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .site-footer {
         font-size: 0.6rem;
     }
@@ -458,14 +462,14 @@ nav.nav a.nav-menu {
     display: none;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     nav.nav a {
         padding: 1rem 2.5rem;
         font-size: 1rem;
     }
 }
 
-@media screen and (min-width:45em) and (max-width:64em) {
+@media screen and (min-width:45em) and (max-width:64rem) {
     nav.nav a {
         padding: 1rem 2rem;
         font-size: 1rem;
@@ -587,7 +591,7 @@ nav.nav a.nav-menu {
     margin: 0rem 0rem;
 }
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:64rem) {
     .double-column .col-side {
         width: 14rem;
     }
@@ -602,7 +606,7 @@ nav.nav a.nav-menu {
     }
 }
 
-@media screen and (min-width:42em) and (max-width:64em) {
+@media screen and (min-width:48rem) and (max-width:64rem) {
     .double-column .col-side {
         width: 12rem;
     }
@@ -617,7 +621,7 @@ nav.nav a.nav-menu {
     }
 }
 
-@media screen and (max-width:42em) {
+@media screen and (max-width:48rem) {
     .double-column .col-side {
         width: 8rem;
         display: none;
