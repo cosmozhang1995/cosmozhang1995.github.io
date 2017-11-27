@@ -30,3 +30,12 @@ img.eq-center {
     height: 20px;
     line-height: 20px;
 }
+
+blockquote.collapsable {
+    max-height: 6.6rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+blockquote.collapsable.uncollapsed {
+    max-height: initial;
+}

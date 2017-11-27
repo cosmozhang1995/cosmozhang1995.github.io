@@ -1,0 +1,22 @@
+{
+  "name": "cosmozhang1995.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cosmozhang1995/cosmozhang1995.github.io.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "gulp": "~3.9.1",
+    "gulp-scp2": "^0.2.0"
+  },
+  "devDependencies": {
+    "gulp-count": "~0.2.0"
+  }
+}
