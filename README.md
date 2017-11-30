@@ -3,6 +3,10 @@ cosmozhang1995.github.io
 
 GitHub Pages
 
+Page generated and managed by jekyll.
+
+NOW WE DON'T USE IT ANY MORE !!!
+
 # Static files
 
 Use OSS service of `aliyun.com`. For documentation, refer to [https://help.aliyun.com/product/31815.html?spm=5176.doc32026.3.1.1gXC2g](https://help.aliyun.com/product/31815.html?spm=5176.doc32026.3.1.1gXC2g).
