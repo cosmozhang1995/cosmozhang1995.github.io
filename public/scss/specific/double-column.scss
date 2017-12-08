@@ -1,0 +1,74 @@
+@import "../variables";
+
+.double-column {
+}
+
+.double-column .col-side {
+    float: right;
+    width: 14rem;
+}
+
+.double-column .col-main {
+    margin-right: 16rem;
+    overflow: hidden;
+}
+
+.double-column .col-side .post-list {
+}
+.double-column .col-side .post-item {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px #eff0f1 solid;
+}
+.double-column .col-side .post-item:last-child {
+    border-bottom: none;
+}
+.double-column .col-side .post-item h3 {
+    font-size: 1rem;
+    margin: 0rem 0rem;
+}
+
+@media screen and (min-width:64rem) {
+    .double-column .col-side {
+        width: 14rem;
+    }
+    .double-column .col-main {
+        margin-right: 16rem;
+    }
+    .double-column .col-side .post-item {
+        padding: 1rem 0.5rem;
+    }
+    .double-column .col-side .post-item h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:48rem) and (max-width:64rem) {
+    .double-column .col-side {
+        width: 12rem;
+    }
+    .double-column .col-main {
+        margin-right: 14rem;
+    }
+    .double-column .col-side .post-item {
+        padding: 1rem 0.5rem;
+    }
+    .double-column .col-side .post-item h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:48rem) {
+    .double-column .col-side {
+        width: 8rem;
+        display: none;
+    }
+    .double-column .col-main {
+        margin-right: 0rem;
+    }
+    .double-column .col-side .post-item {
+        padding: 0.8rem 0.4rem;
+    }
+    .double-column .col-side .post-item h3 {
+        font-size: 0.8rem;
+    }
+}

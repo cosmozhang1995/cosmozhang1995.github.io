@@ -1,7 +1,7 @@
-name: 花栗鼠的猫的技术博客
-author: 花栗鼠的猫
+name: 张家治的个人博客
+author: 张家治
 
-# highlighter: pygments
+highlighter: pygments
 
 gems: [jekyll-paginate]
 

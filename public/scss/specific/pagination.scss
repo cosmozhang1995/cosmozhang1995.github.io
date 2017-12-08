@@ -1,0 +1,43 @@
+.pagination-wrapper {
+    display: block;
+    text-align: center;
+    text-align: 0rem;
+}
+
+.pagination {
+    display: inline-block;
+    white-space: nowrap;
+    border: solid 1px #eff0f1;
+    color: #606c71;
+    font-size: 0rem;
+}
+
+.pagination > * {
+    display: inline-block;
+    white-space: nowrap;
+    border-right: solid 1px #eff0f1;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    line-height: 1;
+}
+.pagination > *:last-child {
+    border-right: none;
+}
+
+.pagination > a,
+.pagination > a:hover,
+.pagination > a:active,
+.pagination > a:link,
+.pagination > a:visited {
+    color: #606c71;
+    text-decoration: none;
+}
+
+.pagination > a:hover {
+    background-color: #eff0f1;
+}
+
+.pagination > em {
+    font-weight: bold;
+    font-style: italic;
+}

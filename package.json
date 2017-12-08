@@ -13,10 +13,11 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "gulp": "~3.9.1",
+    "gulp": "^3.9.1",
     "gulp-scp2": "^0.2.0"
   },
   "devDependencies": {
-    "gulp-count": "~0.2.0"
+    "gulp-count": "~0.2.0",
+    "gulp-sass": "^3.1.0"
   }
 }

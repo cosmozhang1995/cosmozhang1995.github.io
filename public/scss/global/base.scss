@@ -1,0 +1,173 @@
+@import "../variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #606c71;
+}
+
+a {
+  color: #1e6bb8;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  & + .btn {
+    margin-left: 1rem;
+  }
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media screen and (min-width:$window_size_lg) {
+  .btn {
+    padding: 0.75rem 1rem;
+  }
+  .btn.btn-sm {
+    padding: 0.4rem 0.6rem;
+  }
+
+}
+
+@media screen and (min-width:$window_size_sm) and (max-width:$window_size_lg) {
+  .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+  .btn.btn-sm {
+    padding: 0.3rem 0.5rem;
+  }
+
+}
+
+@media screen and (max-width:$window_size_sm) {
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  .btn + .btn {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .btn.btn-sm {
+    padding: 0.25rem 0.25rem;
+  }
+
+}
+
+.page-header {
+  color: #fff;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  margin-top: 0px;
+  padding: 0px 0px;
+}
+.page-header-huge {
+  text-align: center;
+}
+
+@media screen and (min-width:$window_size_md) {
+  .page-header-huge {
+    padding: 5rem 6rem;
+  }
+  .page-header-huge nav.nav {
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+  }
+}
+
+@media screen and (min-width:$window_size_sm) and (max-width:$window_size_md) {
+  .page-header-huge {
+    padding: 3rem 4rem;
+  }
+  .page-header-huge nav.nav {
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+  }
+}
+
+@media screen and (max-width:$window_size_sm) {
+  .page-header-huge {
+    padding: 2rem 1rem;
+  }
+  .page-header-huge nav.nav {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+@media screen and (min-width:$window_size_md) {
+  .project-name {
+    font-size: 3.25rem;
+  }
+
+}
+
+@media screen and (min-width:$window_size_sm) and (max-width:$window_size_md) {
+  .project-name {
+    font-size: 2.25rem;
+  }
+
+}
+
+@media screen and (max-width:$window_size_sm) {
+  .project-name {
+    font-size: 1.75rem;
+  }
+
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+@media screen and (min-width:$window_size_md) {
+  .project-tagline {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media screen and (min-width:$window_size_sm) and (max-width:$window_size_md) {
+  .project-tagline {
+    font-size: 1.15rem;
+  }
+
+}
+
+@media screen and (max-width:$window_size_sm) {
+  .project-tagline {
+    font-size: 1rem;
+  }
+}

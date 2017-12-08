@@ -1,0 +1,15 @@
+.post-list {
+}
+.post-item {
+    padding: 1rem;
+    border-bottom: 1px #eff0f1 solid;
+}
+.post-item:last-child {
+    border-bottom: none;
+}
+
+.post-item .post-excerpt {
+    max-height: 6.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

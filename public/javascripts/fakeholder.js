@@ -43,7 +43,7 @@ $(function() {
             equation = equation.replace(/\<br\/\>/g, '%20');
             equation = equation.replace(/\s/g, '%20');
             equation = equation.replace(/[\'\‘\’]/g, '%27');
-            var imgEl = $('<img src="http://101.201.68.146/cgi-bin/mathtex.cgi?' + equation + '"/>');
+            var imgEl = $('<img class="eq" src="http://101.201.68.146/cgi-bin/mathtex.cgi?' + equation + '"/>');
             if (isEqc) imgEl.addClass('eq-center');
             $(this).after(imgEl);
             $(this).remove();

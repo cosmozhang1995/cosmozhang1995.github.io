@@ -1,0 +1,78 @@
+@import "../variables";
+
+nav.nav {
+  margin: 0px auto;
+  max-width: $window_size_md;
+  text-align: left;
+  position: relative;
+
+  .nav-group {
+    float: right;
+  }
+
+  a {
+    display: inline-block;
+    text-align: center;
+    color: inherit;
+    &:hover,
+    &:active,
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+    &.nav-item,
+    &.nav-menu {
+      &:hover,
+      &:active,
+      &.active {
+        font-weight: bold;
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+    &.nav-menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width:$window_size_md) {
+  nav.nav a {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width:$window_size_sm) and (max-width:$window_size_md) {
+  nav.nav a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:$window_size_sm) {
+  nav.nav a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+  nav.nav a.nav-menu {
+    padding: 0.5rem 0.8rem;
+    display: block;
+    float: right;
+  }
+  nav.nav .nav-group {
+    position: absolute;
+    right: 0rem;
+    top: 2.3rem;
+    display: none;
+  }
+  nav.nav.expand a.nav-menu {
+    background-color: rgba(0,0,0,0.2);
+  }
+  nav.nav.expand .nav-group {
+    display: block;
+  }
+  nav.nav .nav-group a {
+    display: block;
+    background-color: rgba(0,0,0,0.4);
+  }
+}

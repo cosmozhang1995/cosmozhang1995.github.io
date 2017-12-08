@@ -1,0 +1,107 @@
+#!/usr/bin/python
+
+import sys, os
+import getopt
+import datetime
+import re
+
+sys_arguments = sys.argv[1:]
+
+mode = "markdown"
+if ("--textile" in sys_arguments) or ("-t" in sys_arguments):
+    mode = "textile"
+
+arg_cnt = 0
+
+help_text = """Generate a jekyll blog file
+    jekyll_gen_post [args] title
+    Run this command in the blog root path
+    Options:
+      -h, --help:         Show this help information
+      -m, --markdown:     Markdown
+      -t, --textile:      Textile
+      -d, --date:         Specify the date
+      -z, --timezone:     Specify a timezone, if not specified, this won't be add
+"""
+
+
+opts, args = getopt.getopt(sys.argv[1:], "hmtd:z:", ["help", "markdown", "textile", "date=", "timezone="])
+
+# date = datetime.date.today()
+date = datetime.datetime.now()
+timezone_str = None
+
+for op, value in opts:
+    if op in ["-h", "--help"]:
+        print help_text
+        arg_cnt += 1
+        exit(0)
+    elif op in ["-m", "--markdown"]:
+        mode = "markdown"
+        arg_cnt += 1
+    elif op in ["-t", "--textile"]:
+        mode = "textile"
+        arg_cnt += 1
+    elif op in ["-d", "--date"]:
+        value = "-".split(value)
+        value.reverse()
+        value_len = len(value)
+        if value_len == 3:
+            date.replace(year = value[2])
+        elif value_len == 2:
+            date.replace(month = value[1])
+        elif value_len == 1:
+            date.replace(day = value[1])
+        else:
+            raise "Date format not valid"
+            exit(1)
+        arg_cnt += 2
+    elif op  in ["-z", "--timezone"]:
+        timezone_str = value
+        arg_cnt += 2
+
+if len(sys_arguments) <= arg_cnt:
+    raise "Cannot find title"
+    exit(1)
+
+title = sys_arguments[-1]
+title_short = title.replace(" ", "-").lower()
+title_short = re.compile("[^a-zA-Z0-9\\-]").sub('', title_short)
+
+date_str = date.strftime("%Y-%m-%d")
+datetime_str = date.strftime("%Y-%m-%d %H:%M:%S")
+
+filename_postfix = "md"
+if mode == "markdown":
+    filename_postfix = "md"
+elif mode == "textile":
+    filename_postfix = "textile"
+
+filename = "%s-%s.%s" % (date_str, title_short, filename_postfix)
+filepath = os.path.join(os.getcwd(), "_posts", filename)
+
+if os.path.exists(filepath) and os.path.isfile(filepath):
+    print "Cannot create, the blog file %s already exists" % filename
+    exit(0)
+
+file_content = """---
+layout: post
+title: %s
+pagetype: post
+author: Cosmo
+date: %s %s
+---
+""" % (title, datetime_str, "" if timezone_str is None else timezone_str)
+
+file = open(filepath, 'w')
+file.write(file_content)
+file.close()
+
+
+
+
+
+
+
+
+

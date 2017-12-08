@@ -1,0 +1,37 @@
+/* blockquot */
+blockquote.primary { border-left-color: #2e6da4; }
+blockquote.danger  { border-left-color: #d43f3a; }
+blockquote.warning { border-left-color: #eea236; }
+blockquote.success { border-left-color: #4cae4c; }
+
+/* code whitespace */
+code {
+    white-space: normal;
+    word-wrap: break-word;
+}
+pre code {
+    white-space: pre;
+}
+
+/* hide cnzz statistics */
+
+#cnzz_stat_icon_1258204774 {
+    display: none;
+}
+
+/* fake-holder */
+
+fakeholder {
+    display: none;
+}
+
+/* blockquote collapse */
+
+blockquote.collapsable {
+    max-height: 6.6rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+blockquote.collapsable.uncollapsed {
+    max-height: initial;
+}
