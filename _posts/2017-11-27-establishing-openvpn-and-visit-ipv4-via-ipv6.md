@@ -153,6 +153,14 @@ comp-lzo
 
 `chkconfig openvpn on`
 
+---
+
+近日在 Ubuntu 16.04 上测试发现 service 和 chkconfig 命令不太好使了，应该使用如下两条命令：
+
+`systemctl start openvpn@server`
+
+`update-rc.d openvpn start 20 2 3 4 5`
+
 ### 配置OpenVPN客户端
 
 首先需要下载服务端上生成的客户端证书及密钥，还有证书颁发机构的证书，即`ca.crt`, `client.crt`, `client.key`这三个文件。
