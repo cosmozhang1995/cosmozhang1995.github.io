@@ -1,6 +1,6 @@
 ---
 layout: post
-title: deploy_openconnect_server_on_ubuntu
+title: 在Ubuntu上配置OpenConnect
 pagetype: post
 author: Cosmo
 date: 2018-04-18 20:05:12 
