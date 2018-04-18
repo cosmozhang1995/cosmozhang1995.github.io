@@ -7,3 +7,5 @@ npm_debug.log
 task-config.js
 
 package-lock.json
+
+*.pyc
