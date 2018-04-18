@@ -306,4 +306,10 @@ auth = "plain[/path/to/ocpasswd]"
 
 重启`ocserv`，在客户端删掉用户证书，重新连接，就会被要求输入用户名密码了。
 
+## 参考文献
+
+1. [Console log for ocserv configuration](https://gist.github.com/methou/ffd9ec4c9f9e80cb57be)
+2. [使用ocserv搭建 Cisco Anyconnect 服务器](https://www.logcg.com/archives/1343.html)
+3. [TLS/SSL工作原理](https://blog.csdn.net/hherima/article/details/52469360)
+
 
