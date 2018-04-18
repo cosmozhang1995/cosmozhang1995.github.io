@@ -261,7 +261,7 @@ ufw allow 1234/udp
 
 下面我以iOS版的AnyConnect为例来说明，首先需要去AppStore下载AnyConnect，打开后界面如下：
 
-![](http://cosmozhang1995-github-io.oss-cn-beijing.aliyuncs.com/91744b68-4319-11e8-a213-a0999b04d051-1001524061940_.pic.jpg)
+![](http://cosmozhang1995-github-io.oss-cn-beijing.aliyuncs.com/8e292321-431e-11e8-95bb-a0999b04d051-1001524061940_1.jpg)
 
 ### 添加用户证书
 
@@ -279,7 +279,7 @@ ufw allow 1234/udp
 
 回到首页，点击右上角的开关，就可以愉快连接啦～
 
-![](http://cosmozhang1995-github-io.oss-cn-beijing.aliyuncs.com/ce6af1bd-431b-11e8-b633-a0999b04d051-1001524061940_2.jpg)
+![](http://cosmozhang1995-github-io.oss-cn-beijing.aliyuncs.com/809a8987-431e-11e8-a58c-a0999b04d051-1001524061940_2.jpg)
 
 首次连接的时候会出现弹框，告诉你这个证书不可信任，前面说过了，原谅他，我们点击弹框右上角的“导入”，就可以将我们的服务器证书加入信任列表，以后就不会再提示了～
 
