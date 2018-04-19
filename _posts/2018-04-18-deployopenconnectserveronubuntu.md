@@ -306,6 +306,22 @@ auth = "plain[/path/to/ocpasswd]"
 
 重启`ocserv`，在客户端删掉用户证书，重新连接，就会被要求输入用户名密码了。
 
+## 其他客户端配置
+
+Windows和Mac的AnyConnect客户端似乎不太方便从官网下载（似乎官网下载要求你有一个思科账户并且这个账户上有相关的合同签署），所以可以从这个地方下载：[http://frodo.sca.com/downloads/VPN-Clients/AnyConnect/](http://frodo.sca.com/downloads/VPN-Clients/AnyConnect/)。
+
+### Windows中导入用户证书
+
+Windows版的AnyConnect客户端本身没有提供导入用户证书的功能，但它会使用Windows系统中的个人证书作为用户证书尝试连接，可以用Windows的MMC工具管理证书。
+
+`Ctrl+R`运行`mmc`，点击“文件”-“添加/删除管理单元”，然后添加“证书”管理单元，这时会提示“该管理单元将始终为下列账户管理证书”，这里一定要选择“计算机账户”，后面的一律默认选项即可。
+
+添加完成后，左侧导航栏中的“控制台根节点”下会出现“证书(本地计算机)”节点，点进去，依次进入“个人”-“证书”，可以看到这里列出了系统中所有的用户证书。然后在右边的“操作”窗口中点击“更多操作”-“所有任务”-“导入”，选择你的p12证书文件，导入即可。
+
+然后再打开AnyConnect连接服务器就能连上了~
+
+> 其实MMC也可以用来管理Windows的受信证书blabla...，可以随便玩玩。
+
 ## 参考文献
 
 1. [Console log for ocserv configuration](https://gist.github.com/methou/ffd9ec4c9f9e80cb57be)
