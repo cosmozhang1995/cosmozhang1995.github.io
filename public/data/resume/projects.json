@@ -79,5 +79,50 @@
 		"tag": "Web Application",
 		"title": "宝宝知道 - 百度母婴APP",
 		"desc": "<i class=\"fa fa-user\"></i>&nbsp;前端工程师<br/><br/>使用fisp框架开发前端<br/>协调后端PHP基础工作"
+	},
+	{
+		"startYear": 2016,
+		"startMonth": 1,
+		"endYear": 2018,
+		"endMonth": 10,
+		"tag": "Instrument",
+		"title": "线虫实时成像与追踪系统",
+		"desc": "<i class=\"fa fa-user\"></i>&nbsp;软件&算法工程师<br/><br/>对自由运动的线虫进行实施拍摄和快速追踪<br/>使用Qt开发界面，OpenCV+CUDA图像处理<br/>生物样本制备、光学成像（明场+多谱段激发荧光）、机电设备、软件（设备控制+图像采集+目标检测和追踪）<br/><a href=\"http://www.math.pku.edu.cn/teachers/maoh/TrackMicro.html\">项目主页</a>"
+	},
+	{
+		"startYear": 2016,
+		"startMonth": 8,
+		"endYear": 2017,
+		"endMonth": 5,
+		"tag": "Instrument",
+		"title": "大视场高分辨率成像系统",
+		"desc": "<i class=\"fa fa-user\"></i>&nbsp;软件&算法工程师<br/><br/>一次快门拍摄数十亿像素的照片<br/>使用Qt开发界面，OpenCV+CUDA图像处理<br/>光学成像（多芯片协同成像）、机电设备、软件（设备控制+图像采集+图像配准和拼接）<br/><a href=\"http://www.math.pku.edu.cn/teachers/maoh/GigaCam.html\">项目主页</a>"
+	},
+	{
+		"startYear": 2017,
+		"startMonth": 7,
+		"endYear": 2018,
+		"endMonth": 3,
+		"tag": "Instrument",
+		"title": "快速切片扫描成像系统",
+		"desc": "<i class=\"fa fa-user\"></i>&nbsp;软件&算法工程师<br/><br/>医疗&生物行业利器<br/>数十亿像素的切片扫描，一分钟搞定<br/>使用Qt开发界面，OpenCV+CUDA图像处理<br/>光学扫描成像、机电设备、软件（设备控制+图像采集+图像配准和拼接）"
+	},
+	{
+		"startYear": 2017,
+		"startMonth": 12,
+		"endYear": 2018,
+		"endMonth": 2,
+		"tag": "Algorithm",
+		"title": "危险物质谱检测和报警算法",
+		"desc": "<i class=\"fa fa-user\"></i>&nbsp;算法研发<br/><br/>使用CNN对物质放射谱进行分析，从而快速甄别出危险物质，可用于现场安检"
+	},
+	{
+		"startYear": 2017,
+		"startMonth": 12,
+		"endYear": 2018,
+		"endMonth": 5,
+		"tag": "Instrument",
+		"title": "高通量线虫成像系统",
+		"desc": "<i class=\"fa fa-user\"></i>&nbsp;算法研发<br/><br/>对数万条线虫进行长达数十日的连续扫描观测<br/>在扫描过程中自动记录关键时间节点的关键数据，最后自动生成实验分析结果<br/>使用CNN和GAN进行目标检测和形态分析，使用LSTM进行时序分析"
 	}
 ]
