@@ -7,6 +7,8 @@ author: Cosmo
 
 最近由于毕设题目的要求，要做一个ActiveX插件，本来觉得挺简单一个事，但是随着做得深入，同时又想把它做好，发现自己在Windows编程这块非常薄弱，不得不说MS的框架体系真的铺的大。我的项目是基于COM的，关于COM，在网上有很多零零散散的博文介绍，但是总是感觉不知所云，点连不成面。终于今天在一个网站上发现了良心教程：“杨老师”的《COM 组件设计与应用》。决定把各章节收藏下来，以后慢慢看。
 
+<!-- more -->
+
 1. [<fakeholder target="_href"></fakeholder>起源及复合文件](http://www.vckbase.com/index.php/wv/1201)
 
 2. [<fakeholder target="_href"></fakeholder>GUID 和 接口](http://www.vckbase.com/index.php/wv/1203)

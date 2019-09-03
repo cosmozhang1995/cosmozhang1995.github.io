@@ -9,8 +9,6 @@ fakeholder {
     display: inline;
 }
 
-// Equations
-
 img.eq-center {
     display: block;
     margin: 0 auto;
@@ -38,4 +36,3 @@ blockquote.collapsable {
 }
 blockquote.collapsable.uncollapsed {
     max-height: initial;
-}

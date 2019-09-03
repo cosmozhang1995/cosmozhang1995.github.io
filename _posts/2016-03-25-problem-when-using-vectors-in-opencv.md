@@ -7,6 +7,8 @@ author: Cosmo
 
 今天用OpenCV的`imencode`函数编码一个图片，结果在程序结束时发生了一个运行时错误。
 
+<!-- more -->
+
 #### 错误描述
 
 Visual Studio 2015, Windows 10。使用OpenCV来编码图像，将`Mat`以指定的图片格式编码成字节序列，并存储在`vector<uchar>`中。

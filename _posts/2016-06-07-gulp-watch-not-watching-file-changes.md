@@ -8,6 +8,8 @@ date: 2016-06-07 14:23:24 +0800
 
 My gulp-watch task has been started normally. But it seems like gulp can't detect that my files was changed.
 
+<!-- more -->
+
 #### Problem
 
 This comes from my question on Stack-Overflow:

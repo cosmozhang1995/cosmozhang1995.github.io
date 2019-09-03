@@ -7,6 +7,8 @@ author: Cosmo
 
 使用ActiveX可以开发适合IE浏览器的浏览器插件，实际使用中经常需要用js调用ActiveX的功能（接口），下面介绍一下基于MFC开发的ActiveX接口如何被JS调用。
 
+<!-- more -->
+
 #### ActiveX的可用技术
 
 目前ActiveX插件主要基于两种框架开发，一种是MFC，一种是ATL，他们都是基于COM接口的框架。除了ActiveX以外，其他的浏览器插件都是基于 Netscape 的 NPAPI 接口规范开发的。

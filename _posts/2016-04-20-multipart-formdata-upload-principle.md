@@ -6,6 +6,8 @@ author: Cosmo
 ---
 本文解释了通过 multipart/form-data 格式的 HTTP 请求上传文件的原理。
 
+<!-- more -->
+
 #### 简单的HTTP POST
 
 大家通过HTTP向服务器发送POST请求提交数据，都是通过form表单提交的，代码如下：

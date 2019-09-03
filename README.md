@@ -26,3 +26,4 @@ To delete a file:
 or
 
 `./bin/oss delete object-name`
+
