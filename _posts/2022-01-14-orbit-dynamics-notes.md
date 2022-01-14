@@ -56,17 +56,11 @@ $$
 
 # 公式4.33-4.37推导
 
-首先，我们不妨假设，在天球地心赤道坐标系上，轨道平面与赤道平面的交线（即升交点到降交点的连线）延Y轴方向，其中升、降交点分别于秋、春分点重合。
+为了记述方便，我们暂且记$\alpha = \Delta{\lambda}$，$\gamma = \frac{\pi}{2} - \beta$。
 
-在天球上，设轨道（为一个大圆）的升交点为$A$，那么很显然$A$点的坐标为${(\cos{i}, 0, \sin{i})}^T$。设燃尽点点为$B$点，在过$O$点与$OB$垂直的平面（即B点的罗盘平面）上，北极点N点的投影为$N'$，将$\overrightarrow{ON'}$绕$OB$旋转$\beta$后得到$\overrightarrow{OC}$，那么$\overrightarrow{OC}$即为卫星在B点的速度在天球上投影的方向，因此$\overrightarrow{OC} || \square{AOB}$，于是$C$点位于$\square{AOB}$内，而$C$又位于天球上，因此$C$点位于轨道圆上。
+假设轨道由这样一个“初始轨道”变换而来：一条与赤道重合且燃尽点与秋分点$(1,0,0)$重合的大圆轨道。那么有两种变换途径均可达到目的：
 
-接下来，我们计算$C$点的坐标，也即计算$B$点的速度矢量在天球上的投影的方向$\overrightarrow{OC}$。大致思路是：假设轨道由这样一个“初始轨道”变换而来，“初始轨道”与赤道重合且燃尽点$B$与秋分点$(1,0,0)$重合，那么在“初始轨道”上，$B$点的速度朝向为$(0,1,0)$，那么，我们只要将$(0,1,0)$随“初始轨道”一起变换到实际轨道上，就可以得到实际的$B$点速度方向，即$\overrightarrow{OC}$，即$C$点坐标。
-
-为了记述方便，我们暂且记$\alpha = \Delta{\lambda}$，$\gamma = \frac{\pi}{2}$ - \beta。
-
-有两种变换途径：
-
-第一，先转向$l$，使得升交点与秋分点重合，再仰角$i$，得到轨道倾角。即先绕Z轴旋转$l$，再绕X轴旋转$i$。变换矩阵为：
+第一，先转向$l$，使得升交点到达指定位置，再仰角$i$，得到轨道倾角。即先绕Z轴旋转$l$，再绕X轴旋转$i$。变换矩阵为：
 
 $$ \mathbb{R}_x(i) \cdot \mathbb{R}_z(l) =
 \left(\begin{array}{lll} 
@@ -77,7 +71,7 @@ $$ \mathbb{R}_x(i) \cdot \mathbb{R}_z(l) =
 $$
 
 
-第二，先旋转出B点的方位角东偏北$\gamma$，然后仰角$\delta$，得到$B$点的纬度，最后再转向$\alpha$，使得升交点与秋分点重合。即先绕X轴旋转$\gamma$，然后绕Y轴旋转$-\delta$，最后绕Z轴旋转$\alpha$。变换矩阵为：
+第二，先旋转出燃尽点的方位角东偏北$\gamma$，注意由于此时燃尽点位于秋分点，因此B点的罗盘平面就是平面$yOz$，然后仰角$\delta$，使燃尽点到达指定纬度，最后再转向$\alpha$，使得升交点到达指定位置。即先绕X轴旋转$\gamma$，然后绕Y轴旋转$-\delta$，最后绕Z轴旋转$\alpha$。变换矩阵为：
 
 $$ \mathbb{R}_z(\alpha) \cdot \mathbb{R}_y(-\delta) \cdot \mathbb{R}_x(\gamma) =
 \left(\begin{array}{lll} 
@@ -97,6 +91,6 @@ $$
 
 上面两个变换矩阵是相等的，因此9个元素两两相等，于是：
 1. 根据元素$(3,3)$相等，我们可以得到$\cos{i} = \cos{\delta} \cdot \sin{\beta}$，即公式4.33；
-2. 根据元素$(3,1)$相等，我们可以得到$\sin{l} = \frac {\sin{\delta}} {\sin{i}}$；根据元素$(3,2)$相等，我们可以得到$\cos{l} = \frac {\cos{\delta} \cdot \cos{\beta}} {\sin{i}}$；两式相除得到$\tan{l} = \frac {\tan{\delta}} {\cos{beta}}$，即公式4.34；
+2. 根据元素$(3,1)$相等，我们可以得到$\sin{l} = \frac {\sin{\delta}} {\sin{i}}$；根据元素$(3,2)$相等，我们可以得到$\cos{l} = \frac {\cos{\delta} \cdot \cos{\beta}} {\sin{i}}$；两式相除得到$\tan{l} = \frac {\tan{\delta}} {\cos{\beta}}$，即公式4.34；
 3. 根据元素$(2,1)$相等，我们可以得到$\sin{\alpha} = \frac {\cos{i} \cdot \sin{l}} {\cos{\delta}}$；根据元素$(1,1)$相等，我们可以得到$\cos{\alpha} = \frac {\cos{l}} {\cos{\delta}}$；两式相除得到$\tan{\alpha} = \frac {\cos{i}} {\tan{l}}$，即公式4.35。
 
