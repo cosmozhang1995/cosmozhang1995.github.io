@@ -9,3 +9,5 @@ task-config.js
 package-lock.json
 
 *.pyc
+
+.jekyll-metadata
